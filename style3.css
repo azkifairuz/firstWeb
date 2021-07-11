@@ -44,7 +44,7 @@ table {
 
 /* style */
 body{
-    background-image: url(../img/minion.png);
+    background-image: url(img/minion.png);
     background-repeat: no-repeat;
     background-position: center;
     font: 16px/20px arial;
@@ -94,7 +94,7 @@ body{
 } 
 .banner{
     height: 450px;
-    background-image: url(../img/banner.jpg);
+    background-image: url(img/banner.jpg);
     background-size: cover;
     background-position: 0 -40px;
     border-bottom: 3px solid salmon;
