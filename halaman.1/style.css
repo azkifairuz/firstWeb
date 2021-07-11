@@ -1,0 +1,300 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: 'roboto-light';
+
+}
+/* content */
+.container{
+    max-width: 900px;
+    margin: 100px auto ;
+    box-sizing: border-box;
+    background-color: #eee;
+}
+
+
+.main-content{
+    max-width:600px;
+    margin: 10px 0 0 10px;
+}
+
+.judul p{
+    font-size: 12px;
+}
+
+.main-content p{
+    margin-bottom: 25px;
+    font-size: 15px;
+    line-height: 20px;
+}
+.hero{
+    height: 300px;
+    background-image: url(img/img1.jpg);
+    background-size: cover;
+    background-position: center;
+    border-top: 4px solid rgb(95, 95, 255);
+    border-bottom: 4px solid salmon;
+    
+}
+
+
+
+/* link */
+
+.other{
+    background-color: rgb(95, 95, 255);
+    border-bottom: 2px solid;
+    border-top: 2px solid;
+    height: 50px;
+    margin-top: 20px;
+}
+
+.other h2{
+   text-align: center;
+   line-height: 50px;
+   font-size: 2em;
+   font-family: Arial, Helvetica, sans-serif;
+   color: white;
+}
+
+.site{
+    display: flex;
+    margin-top: 20px;
+    padding-bottom: 20px;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+
+
+
+a.button{
+    background-color: lightblue;
+    padding: 10px;
+    border-radius: 20px;
+    margin-left: 25px;
+    text-decoration: none;
+    color: black;
+    text-align: center;
+    font-size: 12px;
+}
+
+a.button:hover{
+    background-color: red;
+    color: white;
+}
+
+
+
+
+
+/* navbar */
+nav{
+    display: flex;
+    position: fixed;
+    background-color: rgb(95, 95, 255);
+    justify-content: space-around;
+    color: white;
+    align-items: center;
+    padding: 15px 0;
+    box-sizing: border-box;
+    z-index: 1;
+    left: 0;
+    right: 0;
+    top: 0;
+    margin-bottom: 20px;
+    border-bottom:3px solid black;
+}
+
+nav .logo{
+    font-family: 'pacifico';
+    font-size: 1.5em;
+    letter-spacing: 3px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    width: 35%;
+    align-items: center;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 12px;
+}
+
+nav ul li a:hover{
+    color: black;
+    background-color: white;
+    padding: 2px;
+}
+
+
+
+/* gallery */
+
+.container2{
+    background-color: rgb(95, 95, 255);
+    border-bottom: 2px solid;
+    border-top: 2px solid;
+    height: 50px;
+    margin-top: 50px;
+}
+
+.container2 h2{
+   text-align: center;
+   line-height: 45px;
+   font-size: 2em;
+   font-family: Arial, Helvetica, sans-serif;
+   color: white;
+}
+
+.gallery{
+    max-width: 900px;
+    margin: 20px auto;
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    margin-top: 20px;
+}
+
+
+.thumbnail{
+    width: 50%;
+    margin-bottom: 10px;
+}
+
+.thumbnail img{
+    width: 100%;
+}
+
+
+
+/* humberger menu*/
+
+.menu-toggle{
+    display: none;
+    flex-direction: column;
+    height: 20px;
+    justify-content: space-between;
+    position: relative;
+}
+
+
+.menu-toggle input{
+    position: absolute;
+    height: 20px;
+    width: 28px;
+    opacity: 0;
+    z-index: 2;
+    
+}
+
+.menu-toggle span{
+    display: block;
+    background-color: white;
+    width: 28px;
+    height: 3px;
+    border-radius: 2px;
+    transition: all .5s;
+}
+
+
+/* humberger animation */
+.menu-toggle span:nth-child(2){
+    transform-origin:0 0 ;
+}
+
+.menu-toggle span:nth-child(4){
+    transform-origin:0 100%;
+}
+
+.menu-toggle input:checked ~ span:nth-child(2){
+    transform: rotate(45deg) translate(-1px,-1px) ;
+}
+
+.menu-toggle input:checked ~ span:nth-child(4){
+    transform: rotate(-45deg) translate(-1px,0) ;
+}
+
+.menu-toggle input:checked ~ span:nth-child(3){
+    transform: scale(0);
+    opacity: 0;
+}
+
+
+/* footer */
+.footer{
+    background-color: rgb(95, 95, 255);
+    color: black;
+    height: 45px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    line-height: 45px;
+    position: relative;
+    bottom: 0;
+}
+
+
+/* responsive */
+
+/* untuk hp */
+
+@media screen and (max-width: 576px){
+    .menu-toggle{
+        display: flex;
+    }
+
+    nav ul{
+        display: flex;
+        position: absolute;
+        flex-direction: column;
+        right: 0;
+        top: 0;
+        background-color: rgb(95, 95, 255);
+        justify-content: space-evenly;
+        height: 100vh;
+        transform: translateX(100%);
+        transition: all 1s;
+        opacity: 0;
+        
+    }
+    .main-content p{
+        font-size: 12px;
+        line-height: 18px;
+    }
+    .container{
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+    .hero{height: 200px;}
+    .other h2{
+        font-size: 1.5em;
+    }
+    .site h2{
+        font-size: 1em;
+    }
+    nav ul.slide{
+        transform: translateX(0);
+        opacity: .9;
+    }
+
+}
+
+/* untuk tablet */
+
+@media screen and (max-width: 768px) {
+    nav ul{
+        width: 50%;
+    }
+    .container{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}

@@ -1,0 +1,129 @@
+*{
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
+}
+
+.body {
+    margin: 0;
+    padding: 0;
+    font-family: 'open sans',sans-serif;
+}
+.wrapper {
+    width: 1100px;
+    position: relative;
+    margin: auto;
+}
+.logo {
+    text-decoration: none;
+    font-size: 50px;
+    font-weight: bold;
+    float: left;
+    font-family: courier;
+    color: white;
+}
+.menu {
+    float: right;
+}
+nav {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    line-height: 80px;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    background: black;
+    z-index: 1;
+    border-bottom:1px solid  #393e46;
+    border-left: 1px solid #393e46;
+    border-right: 1px solid #393e46;
+}
+nav ul li a{
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    padding: 0px 16px 0px 16px;
+    text-decoration: none;
+}
+nav ul li a:hover{
+    text-decoration: underline;
+}
+
+nav ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    font-family: 'open sans', sans-serif;
+}
+nav ul li{
+    float: left;
+}
+section{
+    margin: auto;
+    display: flex;
+    margin-bottom: 50px;
+    margin-top: 90px;
+}
+.column{
+    margin-top: 90px;
+    margin-bottom: 50px;
+}
+.column .description{
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'comic sans ms';
+    color: #393e46;
+}
+h2{
+    font-family: 'comic sans ms';
+    font-size: 45px;
+    font-weight: 800;
+    margin-bottom: 20px;
+    color: #393e46;
+}
+a.tombol {
+    background-color: #0c4271;
+    text-decoration: none;
+}
+a.tombol{
+    border-radius: 20px;
+    margin-top: 20px;
+    padding: 15px 20px 15px 20px;
+    color: white;
+    cursor: pointer;
+    font-weight:bold;
+    font-family: 'open sans',sans-serif;
+}
+a.tombol:hover{
+    text-decoration: none;
+    background: #cf0000;
+}
+a.button{
+    background: #c6ffc1;
+    border-radius: 20px;
+    padding: 15px 20px 15px 20px;
+    color: black;
+    margin-top: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    font-family: 'open sans', sans-serif;
+}
+p {
+    margin: 10px 0px 10px 0px;
+    padding: 10px 0px 10px 0px;
+}
+a.button:hover{
+    background: #f55c47;
+}
+
+.about{
+    width: 1100px;
+    position: relative;
+    margin: auto;
+}
+
+.about section{
+    display: flex;
+}
